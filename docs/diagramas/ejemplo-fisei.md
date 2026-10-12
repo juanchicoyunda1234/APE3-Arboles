@@ -3,7 +3,6 @@
 Así debe quedar el trabajo de cada equipo (con su propia facultad y sus propias matrículas).
 
 ## Árbol general
-
 ```mermaid
 flowchart TD
     FISEI["FISEI<br/><small>FACULTAD</small>"]
@@ -11,14 +10,10 @@ flowchart TD
     SW["SW<br/><small>Software</small>"]
     TI["TI<br/><small>Tecnologías de la Información</small>"]
     TEL["TEL<br/><small>Telecomunicaciones</small>"]
-    AR["AR<br/><small>Automatización y Robótica</small>"]
-    IND["IND<br/><small>Industrial</small>"]
 
     FISEI --> SW
     FISEI --> TI
     FISEI --> TEL
-    FISEI --> AR
-    FISEI --> IND
 
     %% ---------- SW ----------
     SW_N3["SW-N3<br/><small>NIVEL</small>"]
@@ -61,34 +56,6 @@ flowchart TD
     TEL --> TEL_N4
     TEL_N4 --> TEL_N4_A
     TEL_N4 --> TEL_N4_B
-
-    %% ---------- AR ----------
-    AR_N3["AR-N3<br/><small>NIVEL</small>"]
-    AR_N3_A["AR-N3-A<br/><small>PARALELO</small>"]
-    AR_N3_B["AR-N3-B<br/><small>PARALELO</small>"]
-    AR_N4["AR-N4<br/><small>NIVEL</small>"]
-    AR_N4_A["AR-N4-A<br/><small>PARALELO</small>"]
-    AR_N4_B["AR-N4-B<br/><small>PARALELO</small>"]
-    AR --> AR_N3
-    AR_N3 --> AR_N3_A
-    AR_N3 --> AR_N3_B
-    AR --> AR_N4
-    AR_N4 --> AR_N4_A
-    AR_N4 --> AR_N4_B
-
-    %% ---------- IND ----------
-    IND_N3["IND-N3<br/><small>NIVEL</small>"]
-    IND_N3_A["IND-N3-A<br/><small>PARALELO</small>"]
-    IND_N3_B["IND-N3-B<br/><small>PARALELO</small>"]
-    IND_N4["IND-N4<br/><small>NIVEL</small>"]
-    IND_N4_A["IND-N4-A<br/><small>PARALELO</small>"]
-    IND_N4_B["IND-N4-B<br/><small>PARALELO</small>"]
-    IND --> IND_N3
-    IND_N3 --> IND_N3_A
-    IND_N3 --> IND_N3_B
-    IND --> IND_N4
-    IND_N4 --> IND_N4_A
-    IND_N4 --> IND_N4_B
 ```
 
 ![Árbol general de FISEI](ejemplo-fisei-arbol.jpg)
