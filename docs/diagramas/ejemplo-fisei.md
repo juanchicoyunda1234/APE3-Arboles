@@ -58,7 +58,7 @@ flowchart TD
     TEL_N4 --> TEL_N4_B
 ```
 
-![Árbol general de FISEI](ejemplo-fisei-arbol.jpg)
+
 
 | Concepto | Respuesta |
 |---|---|
