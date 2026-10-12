@@ -7,24 +7,88 @@ Así debe quedar el trabajo de cada equipo (con su propia facultad y sus propias
 ```mermaid
 flowchart TD
     FISEI["FISEI<br/><small>FACULTAD</small>"]
+
     SW["SW<br/><small>Software</small>"]
-    FISEI --> SW
     TI["TI<br/><small>Tecnologías de la Información</small>"]
-    FISEI --> TI
     TEL["TEL<br/><small>Telecomunicaciones</small>"]
-    FISEI --> TEL
     AR["AR<br/><small>Automatización y Robótica</small>"]
-    FISEI --> AR
     IND["IND<br/><small>Industrial</small>"]
+
+    FISEI --> SW
+    FISEI --> TI
+    FISEI --> TEL
+    FISEI --> AR
     FISEI --> IND
+
+    %% ---------- SW ----------
     SW_N3["SW-N3<br/><small>NIVEL</small>"]
-    SW --> SW_N3
     SW_N3_A["SW-N3-A<br/><small>PARALELO</small>"]
-    SW_N3 --> SW_N3_A
     SW_N3_B["SW-N3-B<br/><small>PARALELO</small>"]
-    SW_N3 --> SW_N3_B
     SW_N4["SW-N4<br/><small>NIVEL</small>"]
+    SW_N4_A["SW-N4-A<br/><small>PARALELO</small>"]
+    SW_N4_B["SW-N4-B<br/><small>PARALELO</small>"]
+    SW --> SW_N3
+    SW_N3 --> SW_N3_A
+    SW_N3 --> SW_N3_B
     SW --> SW_N4
+    SW_N4 --> SW_N4_A
+    SW_N4 --> SW_N4_B
+
+    %% ---------- TI ----------
+    TI_N3["TI-N3<br/><small>NIVEL</small>"]
+    TI_N3_A["TI-N3-A<br/><small>PARALELO</small>"]
+    TI_N3_B["TI-N3-B<br/><small>PARALELO</small>"]
+    TI_N4["TI-N4<br/><small>NIVEL</small>"]
+    TI_N4_A["TI-N4-A<br/><small>PARALELO</small>"]
+    TI_N4_B["TI-N4-B<br/><small>PARALELO</small>"]
+    TI --> TI_N3
+    TI_N3 --> TI_N3_A
+    TI_N3 --> TI_N3_B
+    TI --> TI_N4
+    TI_N4 --> TI_N4_A
+    TI_N4 --> TI_N4_B
+
+    %% ---------- TEL ----------
+    TEL_N3["TEL-N3<br/><small>NIVEL</small>"]
+    TEL_N3_A["TEL-N3-A<br/><small>PARALELO</small>"]
+    TEL_N3_B["TEL-N3-B<br/><small>PARALELO</small>"]
+    TEL_N4["TEL-N4<br/><small>NIVEL</small>"]
+    TEL_N4_A["TEL-N4-A<br/><small>PARALELO</small>"]
+    TEL_N4_B["TEL-N4-B<br/><small>PARALELO</small>"]
+    TEL --> TEL_N3
+    TEL_N3 --> TEL_N3_A
+    TEL_N3 --> TEL_N3_B
+    TEL --> TEL_N4
+    TEL_N4 --> TEL_N4_A
+    TEL_N4 --> TEL_N4_B
+
+    %% ---------- AR ----------
+    AR_N3["AR-N3<br/><small>NIVEL</small>"]
+    AR_N3_A["AR-N3-A<br/><small>PARALELO</small>"]
+    AR_N3_B["AR-N3-B<br/><small>PARALELO</small>"]
+    AR_N4["AR-N4<br/><small>NIVEL</small>"]
+    AR_N4_A["AR-N4-A<br/><small>PARALELO</small>"]
+    AR_N4_B["AR-N4-B<br/><small>PARALELO</small>"]
+    AR --> AR_N3
+    AR_N3 --> AR_N3_A
+    AR_N3 --> AR_N3_B
+    AR --> AR_N4
+    AR_N4 --> AR_N4_A
+    AR_N4 --> AR_N4_B
+
+    %% ---------- IND ----------
+    IND_N3["IND-N3<br/><small>NIVEL</small>"]
+    IND_N3_A["IND-N3-A<br/><small>PARALELO</small>"]
+    IND_N3_B["IND-N3-B<br/><small>PARALELO</small>"]
+    IND_N4["IND-N4<br/><small>NIVEL</small>"]
+    IND_N4_A["IND-N4-A<br/><small>PARALELO</small>"]
+    IND_N4_B["IND-N4-B<br/><small>PARALELO</small>"]
+    IND --> IND_N3
+    IND_N3 --> IND_N3_A
+    IND_N3 --> IND_N3_B
+    IND --> IND_N4
+    IND_N4 --> IND_N4_A
+    IND_N4 --> IND_N4_B
 ```
 
 ![Árbol general de FISEI](ejemplo-fisei-arbol.jpg)
