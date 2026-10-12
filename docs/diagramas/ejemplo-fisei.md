@@ -27,6 +27,7 @@ flowchart TD
     SW --> SW_N4
 ```
 
+![Árbol general de FISEI](ejemplo-fisei-arbol.jpg)
 
 | Concepto | Respuesta |
 |---|---|
@@ -61,6 +62,7 @@ flowchart TD
     n50 -->|der| n70
 ```
 
+![ABB del paralelo SW-N3-B](ejemplo-fisei-abb.jpg)
 
 | Concepto | Respuesta |
 |---|---|
